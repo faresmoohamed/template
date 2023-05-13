@@ -1,0 +1,726 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: oswald;
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+.clear{
+    content:" ";
+    clear: both;
+}
+
+/*========================= 
+start nav
+===========================*/
+nav{
+    background-color: black;
+    width: 100%;
+    
+}
+
+nav a{
+    color: white;
+    padding: 12px 14px;
+    display: inline-block;
+}
+
+nav a:hover{
+    background-color: silver;
+    color: black;
+}
+nav .search{
+    float: right;
+
+}
+
+/*========================= 
+end nav
+===========================*/
+
+/* ===================================================== */
+
+/*========================= 
+start header
+===========================*/
+
+.header{
+    font-family: oswald;
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+.header h1{
+    font-size: 48px;
+    font-weight: 500;
+    margin: 19px 0;
+}
+.header > p{
+    font-size: 16px;
+    font-family: 'oswald';   
+}
+.header p span{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 8px;
+}
+.image_header{
+    position: relative;
+    background : #F1F1F1;
+}
+
+
+.image_header .text{
+    color: white;
+    font-family: oswald;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    padding: 12px 24px;
+    letter-spacing: 4px;
+
+}
+.image_header .text h2{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.image_header .text h1{
+    font-size: 64px;
+    line-height: 0.5;
+}
+.image_header .text h6{
+    margin: 10px 0;
+}
+.image_header .text h6 button{
+    padding: 17px 26px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(192, 192, 192, 0.8 );
+    cursor: pointer;
+
+}
+.image_header .text h6 button:hover{
+    color: #000;
+    background-color: silver;
+}
+
+
+/*========================= 
+end header
+===========================*/
+
+/* ===================================================== */
+
+/*========================= 
+start main
+===========================*/
+main{
+    background-color: #F1F1F1;
+    height: auto;
+    overflow: auto;
+
+}
+
+/*=========== 
+start section
+===========*/
+
+main section{
+    width: 67%;
+    float: left;
+    padding: 8px 16px;
+}
+
+main section article{
+    background-color: white;
+    padding: 25px 25px 17px;
+    margin: 30px 15px;
+}
+#art_1{
+    margin-bottom: 40px;
+}
+main section article .arttitle{
+    font-family: 'oswald';
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.5;
+}
+main section article .artdescr{
+    font-family: 'oswald';
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 12px 0px 25px;
+}
+main section article .artdescr span{
+    color: #787878;
+}
+main section article .artcont{
+    text-align: justify;
+    font-family: opensans;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 30px 0 0;
+}
+main section article .artcont span{
+    font-weight: bold;
+}
+main section article .button{
+    padding: 30px 0px;
+    margin-bottom: 30px;
+}
+main section article .button .like{
+    float: left;
+    padding: 12px 18px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-family: opensans;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+main section article .button .like:hover{
+    background-color: silver;;
+}
+
+main section article .button .repli{
+    float: right;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: white;
+    font-family: opensans;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+main section article .button .repli span{
+    padding: 2px 10px;
+    background-color: white;
+    color: black;
+}
+main section article .button .repli:hover{
+    background-color: silver;
+    color: black;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 50px 0 20px;
+}
+main section article .artfootimg{
+    float: left;
+}
+main section article .artfoot{
+    width: 84%;
+    float: right;
+    padding: 9px 8px;
+}
+main section article .artfoot h4{
+    font-family: oswald;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+main section article .artfoot h4 span{
+    font-size: 17px;
+    color: #787878;
+}
+main section article .artfoot b{
+    font-family: opensans;
+    padding-top: 12px;
+    font-weight: 400;
+
+}
+
+.comment{
+    display: none;
+}
+
+
+/*=========== 
+Switch_pages
+===========*/
+
+
+#Switch_pages{
+    padding: 0px 10px 25px;
+}
+
+#Switch_pages .pages{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+}
+#Switch_pages .pages .page-item{
+
+    margin: 0 4px 0;   
+}
+#Switch_pages .pages .page-item .page-link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: opensans;
+    padding: 9px 14px;
+    display: block;
+    border: 1px solid #d5d9dd;
+}
+
+#Switch_pages .pages .page-item .page-link:hover{
+    background-color: #ebebeb;
+    color: black !important;
+}
+#item-active {
+    background-color: black;
+    color: white !important;
+}
+
+
+
+/*=========== 
+end Switch-pag
+===========*/
+
+/*=========== 
+end section
+===========*/
+
+/* ---------------------- */
+
+/*=========== 
+start aside
+===========*/
+
+.card{
+    margin: 30px 16px;
+}
+
+main aside{
+    width: 33%;
+    float: right;
+    padding: 8px 16px;
+
+}
+
+
+main aside .card p{
+    font-family: opensans;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: justify;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin-top: -8px;
+}
+main aside .card p span{
+    display: block;
+    font-size: 19px;
+    letter-spacing: -1px;
+    margin: 5px 0 17px;
+}
+main aside .side_sections{
+    margin: 30px 16px;
+
+}
+main aside .side_sections h3{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-family: oswald;
+    font-weight: normal;
+}
+main aside .side_sections .side_sections_content{
+    background-color: white;
+}
+
+
+
+/*---- 
+
+posts 
+
+----*/
+main aside .side_sections #Posts{
+
+}
+main aside .side_sections #Posts ul{
+    list-style: none;
+
+}
+main aside .side_sections #Posts ul li{
+    padding: 10px 16px;
+    border-top: 1px solid silver;
+
+}
+main aside .side_sections #Posts ul li .left_s{
+    width: 60px;
+    float: left;
+    margin-right: 16px;
+}
+
+main aside .side_sections #Posts ul li .right_s p{
+
+    font-size: 15px;
+    font-family: opensans;
+    line-height: 1.5;
+
+}
+main aside .side_sections #Posts ul li .right_s span{
+    display: block;
+    font-size: 22px;
+}
+main aside .side_sections #Posts ul li:hover{
+    background-color: silver;
+
+}
+
+
+/*---- 
+
+Advertise 
+
+----*/
+main aside .side_sections #Advertise{
+    padding: 20px;
+}
+
+main aside .side_sections #Advertise > p{
+    padding: 100px 0;
+    text-align: center;
+    background-color: #F1F1F1;
+    font-family: opensans;
+    font-size: 20px;
+}
+
+
+/*---- 
+
+Tags 
+
+----*/
+main aside .side_sections #Tags{
+    padding: 20px;
+}
+main aside .side_sections #Tags span{
+    padding: 1px 8px;
+    background-color: #f1f1f1;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'opensans';
+}
+main aside .side_sections #Tags .span_1{
+    
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+/*---- 
+
+Inspiration
+
+----*/
+main aside .side_sections #Inspiration{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+main aside .side_sections #Inspiration .images{
+    display: flex;
+}
+
+
+main aside .side_sections #Inspiration  .images p{
+    width: 50%;
+    padding: 10px;
+}
+
+/*---- 
+
+Follow 
+
+----*/
+main aside .side_sections #Follow{
+    padding: 0px 20px;
+}
+main aside .side_sections #Follow a{
+    color: black;
+    font-size: 25px;
+    padding: 12px 2px;
+    display: inline-block;
+}
+main aside .side_sections #Follow a:hover{
+    color: rgba(78, 77, 77, 0.726);
+}
+
+
+/*---- 
+
+Subscribe
+
+----*/
+main aside .side_sections #Subscribe{
+    padding: 20px;
+}
+main aside .side_sections #Subscribe p{
+    font-family: opensans;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+main aside .side_sections #Subscribe input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-family: opensans;
+    font-size: 16px;
+}
+main aside .side_sections #Subscribe button{
+    width: 100%;
+    color: white;
+    background-color: #F44336;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+main aside .side_sections #Subscribe button:hover{
+    background-color: silver;
+    color: black;
+    
+}
+
+
+/*=========== 
+end aside
+===========*/
+
+/*========================= 
+end main
+===========================*/
+
+/* ===================================================== */
+
+/*========================= 
+start footer
+===========================*/
+
+
+footer{
+    width: 100%;
+    background-color: #616161;
+    padding: 50px 36px;
+    font-family: opensans;
+}
+footer .footera{
+    text-decoration: none;
+    padding: 12px 19px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
+footer .footera:hover{
+    background-color: silver;
+    color: black;
+}
+footer .footerp{
+    padding: 50px 0px;
+    color: white;
+}
+footer .footerp a{
+    color: white;
+}
+
+
+
+/*========================= 
+end footer
+===========================*/
+
+/* ===================================================== */
+
+/*========================= 
+start modal subscribe
+===========================*/
+
+.modal-subscribe{
+    
+    animation: opac 0.8s;
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: rgb(0,0,0); */
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content{
+    padding: 32px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    margin-top: 0px;
+    outline: 0;
+    width: 65%;
+}
+.modal-container{
+    color: #000!important;
+    background-color: #fff!important;
+    padding: 0.01em 16px;
+}
+.head-modal{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.title-modal{
+    font-size: 31px;
+    font-family: oswald;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+.close{
+    font-size: 31px;
+    cursor: pointer;
+}
+.close:hover{
+    color: #777;
+}
+.modal-p{
+    font-family: opensans;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 18px 0;
+}
+.modal-input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-family: opensans;
+    font-size: 16px;
+}
+.modal-button{
+    width: 100%;
+    color: white;
+    background-color: #F44336;
+    padding: 12px 24px;
+    border: none;
+    font-family: opensans;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.modal-button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+
+/* ===================================================== */
+
+/*========================= 
+start media
+===========================*/
+
+@media (max-width: 991px){
+html {
+    font-size: 90%;
+}
+}
+
+@media ( max-width : 600px) {
+
+    .image_header .text h1{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    main section article .artfoot{
+        width: 100%;
+        float: right;
+        padding: 15px 0px;
+    }
+
+}
+
+@media ( max-width : 993px) {
+    main section{
+        width: 100%;
+    }
+    .card {
+        margin: 0px 16px;
+    }
+
+    #Switch_pages{
+        display: none;
+    }
+
+    main aside{
+        width: 100%;
+    }
+    .modal-content{
+        width: 90%;
+    }
+}
+
+
+@media ( min-width : 600px) and ( max-width : 1012px) {
+
+    main section article .artfoot{
+        width: 77%;
+        float: right;
+        padding: 15px 0px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
